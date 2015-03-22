@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>HelloSeaJS</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+  <script type="text/javascript" src='sea-modules/seajs/sea.js'></script>
+</head>
+<body>
+
+<h1 id='title'>An Hongpeng</h1>
+  
+<script>
+  //Set configuration
+  seajs.config({
+  	base: './sea-modules/',
+  	alias:{
+  	  'jquery':'jquery/jquery'
+  	}
+  });
+
+  seajs.use('./application/main');
+</script>
+
+</body>
+</html>
